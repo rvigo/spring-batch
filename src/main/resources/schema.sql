@@ -1,0 +1,15 @@
+DROP TABLE person IF EXISTS;
+
+CREATE TABLE person (
+    id BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    name VARCHAR(20),
+    status VARCHAR(20) DEFAULT 'NON_PROCESSED'
+);
+
+DROP TABLE processed_person IF EXISTS;
+
+CREATE TABLE processed_person (
+    id BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    name VARCHAR(20),
+    status VARCHAR(20)
+);
